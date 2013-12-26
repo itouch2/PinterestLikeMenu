@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB8DCCC61865BBBD006A75E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DCCC51865BBBD006A75E9 /* Foundation.framework */; };
+		CB8DCCC81865BBBD006A75E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DCCC71865BBBD006A75E9 /* CoreGraphics.framework */; };
+		CB8DCCCA1865BBBD006A75E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DCCC91865BBBD006A75E9 /* UIKit.framework */; };
+		CB8DCCD01865BBBD006A75E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB8DCCCE1865BBBD006A75E9 /* InfoPlist.strings */; };
+		CB8DCCD21865BBBD006A75E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8DCCD11865BBBD006A75E9 /* main.m */; };
+		CB8DCCD61865BBBD006A75E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8DCCD51865BBBD006A75E9 /* AppDelegate.m */; };
+		CB8DCCD91865BBBD006A75E9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8DCCD71865BBBD006A75E9 /* Main_iPhone.storyboard */; };
+		CB8DCCDC1865BBBD006A75E9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8DCCDA1865BBBD006A75E9 /* Main_iPad.storyboard */; };
+		CB8DCCDF1865BBBD006A75E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8DCCDE1865BBBD006A75E9 /* ViewController.m */; };
+		CB8DCCE11865BBBD006A75E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8DCCE01865BBBD006A75E9 /* Images.xcassets */; };
+		CB8DCCE81865BBBD006A75E9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DCCE71865BBBD006A75E9 /* XCTest.framework */; };
+		CB8DCCE91865BBBD006A75E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DCCC51865BBBD006A75E9 /* Foundation.framework */; };
+		CB8DCCEA1865BBBD006A75E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DCCC91865BBBD006A75E9 /* UIKit.framework */; };
+		CB8DCCF21865BBBD006A75E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB8DCCF01865BBBD006A75E9 /* InfoPlist.strings */; };
+		CB8DCCF41865BBBD006A75E9 /* PininterestLikeMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8DCCF31865BBBD006A75E9 /* PininterestLikeMenuTests.m */; };
+		CB8DCD001865BC0E006A75E9 /* PininterestLikeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8DCCFF1865BC0E006A75E9 /* PininterestLikeMenu.m */; };
+		CB8DCD031865BC3D006A75E9 /* PininterestLikeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8DCD021865BC3D006A75E9 /* PininterestLikeMenuItem.m */; };
+		CBCD9B0C1869E0F2008F26DA /* center-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCD9B0A1869E0F2008F26DA /* center-highlighted.png */; };
+		CBCD9B0D1869E0F2008F26DA /* center-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCD9B0B1869E0F2008F26DA /* center-highlighted@2x.png */; };
+		CBE22499186875DB0018EF3D /* center.png in Resources */ = {isa = PBXBuildFile; fileRef = CBE22497186875DB0018EF3D /* center.png */; };
+		CBE2249A186875DB0018EF3D /* center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBE22498186875DB0018EF3D /* center@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB8DCCEB1865BBBD006A75E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB8DCCBA1865BBBD006A75E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB8DCCC11865BBBD006A75E9;
+			remoteInfo = PininterestLikeMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB8DCCC21865BBBD006A75E9 /* PininterestLikeMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PininterestLikeMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8DCCC51865BBBD006A75E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB8DCCC71865BBBD006A75E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CB8DCCC91865BBBD006A75E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CB8DCCCD1865BBBD006A75E9 /* PininterestLikeMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PininterestLikeMenu-Info.plist"; sourceTree = "<group>"; };
+		CB8DCCCF1865BBBD006A75E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB8DCCD11865BBBD006A75E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB8DCCD31865BBBD006A75E9 /* PininterestLikeMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PininterestLikeMenu-Prefix.pch"; sourceTree = "<group>"; };
+		CB8DCCD41865BBBD006A75E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB8DCCD51865BBBD006A75E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB8DCCD81865BBBD006A75E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		CB8DCCDB1865BBBD006A75E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		CB8DCCDD1865BBBD006A75E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB8DCCDE1865BBBD006A75E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CB8DCCE01865BBBD006A75E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB8DCCE61865BBBD006A75E9 /* PininterestLikeMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PininterestLikeMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8DCCE71865BBBD006A75E9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CB8DCCEF1865BBBD006A75E9 /* PininterestLikeMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PininterestLikeMenuTests-Info.plist"; sourceTree = "<group>"; };
+		CB8DCCF11865BBBD006A75E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB8DCCF31865BBBD006A75E9 /* PininterestLikeMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PininterestLikeMenuTests.m; sourceTree = "<group>"; };
+		CB8DCCFE1865BC0E006A75E9 /* PininterestLikeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PininterestLikeMenu.h; sourceTree = "<group>"; };
+		CB8DCCFF1865BC0E006A75E9 /* PininterestLikeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PininterestLikeMenu.m; sourceTree = "<group>"; };
+		CB8DCD011865BC3D006A75E9 /* PininterestLikeMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PininterestLikeMenuItem.h; sourceTree = "<group>"; };
+		CB8DCD021865BC3D006A75E9 /* PininterestLikeMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PininterestLikeMenuItem.m; sourceTree = "<group>"; };
+		CBCD9B0A1869E0F2008F26DA /* center-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "center-highlighted.png"; sourceTree = "<group>"; };
+		CBCD9B0B1869E0F2008F26DA /* center-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "center-highlighted@2x.png"; sourceTree = "<group>"; };
+		CBE22497186875DB0018EF3D /* center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = center.png; sourceTree = "<group>"; };
+		CBE22498186875DB0018EF3D /* center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "center@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB8DCCBF1865BBBD006A75E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8DCCC81865BBBD006A75E9 /* CoreGraphics.framework in Frameworks */,
+				CB8DCCCA1865BBBD006A75E9 /* UIKit.framework in Frameworks */,
+				CB8DCCC61865BBBD006A75E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8DCCE31865BBBD006A75E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8DCCE81865BBBD006A75E9 /* XCTest.framework in Frameworks */,
+				CB8DCCEA1865BBBD006A75E9 /* UIKit.framework in Frameworks */,
+				CB8DCCE91865BBBD006A75E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB8DCCB91865BBBD006A75E9 = {
+			isa = PBXGroup;
+			children = (
+				CB8DCCCB1865BBBD006A75E9 /* PininterestLikeMenu */,
+				CB8DCCED1865BBBD006A75E9 /* PininterestLikeMenuTests */,
+				CB8DCCC41865BBBD006A75E9 /* Frameworks */,
+				CB8DCCC31865BBBD006A75E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB8DCCC31865BBBD006A75E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB8DCCC21865BBBD006A75E9 /* PininterestLikeMenu.app */,
+				CB8DCCE61865BBBD006A75E9 /* PininterestLikeMenuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB8DCCC41865BBBD006A75E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB8DCCC51865BBBD006A75E9 /* Foundation.framework */,
+				CB8DCCC71865BBBD006A75E9 /* CoreGraphics.framework */,
+				CB8DCCC91865BBBD006A75E9 /* UIKit.framework */,
+				CB8DCCE71865BBBD006A75E9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB8DCCCB1865BBBD006A75E9 /* PininterestLikeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CB8DCCD41865BBBD006A75E9 /* AppDelegate.h */,
+				CB8DCCD51865BBBD006A75E9 /* AppDelegate.m */,
+				CB8DCCD71865BBBD006A75E9 /* Main_iPhone.storyboard */,
+				CB8DCCDA1865BBBD006A75E9 /* Main_iPad.storyboard */,
+				CB8DCCDD1865BBBD006A75E9 /* ViewController.h */,
+				CB8DCCDE1865BBBD006A75E9 /* ViewController.m */,
+				CB8DCCFD1865BC00006A75E9 /* PininterestLikeMenu */,
+				CBE22496186875DB0018EF3D /* images */,
+				CB8DCCE01865BBBD006A75E9 /* Images.xcassets */,
+				CB8DCCCC1865BBBD006A75E9 /* Supporting Files */,
+			);
+			path = PininterestLikeMenu;
+			sourceTree = "<group>";
+		};
+		CB8DCCCC1865BBBD006A75E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB8DCCCD1865BBBD006A75E9 /* PininterestLikeMenu-Info.plist */,
+				CB8DCCCE1865BBBD006A75E9 /* InfoPlist.strings */,
+				CB8DCCD11865BBBD006A75E9 /* main.m */,
+				CB8DCCD31865BBBD006A75E9 /* PininterestLikeMenu-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB8DCCED1865BBBD006A75E9 /* PininterestLikeMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB8DCCF31865BBBD006A75E9 /* PininterestLikeMenuTests.m */,
+				CB8DCCEE1865BBBD006A75E9 /* Supporting Files */,
+			);
+			path = PininterestLikeMenuTests;
+			sourceTree = "<group>";
+		};
+		CB8DCCEE1865BBBD006A75E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB8DCCEF1865BBBD006A75E9 /* PininterestLikeMenuTests-Info.plist */,
+				CB8DCCF01865BBBD006A75E9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB8DCCFD1865BC00006A75E9 /* PininterestLikeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CB8DCCFE1865BC0E006A75E9 /* PininterestLikeMenu.h */,
+				CB8DCCFF1865BC0E006A75E9 /* PininterestLikeMenu.m */,
+				CB8DCD011865BC3D006A75E9 /* PininterestLikeMenuItem.h */,
+				CB8DCD021865BC3D006A75E9 /* PininterestLikeMenuItem.m */,
+			);
+			path = PininterestLikeMenu;
+			sourceTree = "<group>";
+		};
+		CBE22496186875DB0018EF3D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CBE22497186875DB0018EF3D /* center.png */,
+				CBE22498186875DB0018EF3D /* center@2x.png */,
+				CBCD9B0A1869E0F2008F26DA /* center-highlighted.png */,
+				CBCD9B0B1869E0F2008F26DA /* center-highlighted@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB8DCCC11865BBBD006A75E9 /* PininterestLikeMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB8DCCF71865BBBD006A75E9 /* Build configuration list for PBXNativeTarget "PininterestLikeMenu" */;
+			buildPhases = (
+				CB8DCCBE1865BBBD006A75E9 /* Sources */,
+				CB8DCCBF1865BBBD006A75E9 /* Frameworks */,
+				CB8DCCC01865BBBD006A75E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PininterestLikeMenu;
+			productName = PininterestLikeMenu;
+			productReference = CB8DCCC21865BBBD006A75E9 /* PininterestLikeMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB8DCCE51865BBBD006A75E9 /* PininterestLikeMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB8DCCFA1865BBBD006A75E9 /* Build configuration list for PBXNativeTarget "PininterestLikeMenuTests" */;
+			buildPhases = (
+				CB8DCCE21865BBBD006A75E9 /* Sources */,
+				CB8DCCE31865BBBD006A75E9 /* Frameworks */,
+				CB8DCCE41865BBBD006A75E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB8DCCEC1865BBBD006A75E9 /* PBXTargetDependency */,
+			);
+			name = PininterestLikeMenuTests;
+			productName = PininterestLikeMenuTests;
+			productReference = CB8DCCE61865BBBD006A75E9 /* PininterestLikeMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB8DCCBA1865BBBD006A75E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Tu You";
+				TargetAttributes = {
+					CB8DCCE51865BBBD006A75E9 = {
+						TestTargetID = CB8DCCC11865BBBD006A75E9;
+					};
+				};
+			};
+			buildConfigurationList = CB8DCCBD1865BBBD006A75E9 /* Build configuration list for PBXProject "PininterestLikeMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB8DCCB91865BBBD006A75E9;
+			productRefGroup = CB8DCCC31865BBBD006A75E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB8DCCC11865BBBD006A75E9 /* PininterestLikeMenu */,
+				CB8DCCE51865BBBD006A75E9 /* PininterestLikeMenuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB8DCCC01865BBBD006A75E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8DCCDC1865BBBD006A75E9 /* Main_iPad.storyboard in Resources */,
+				CBCD9B0D1869E0F2008F26DA /* center-highlighted@2x.png in Resources */,
+				CB8DCCE11865BBBD006A75E9 /* Images.xcassets in Resources */,
+				CB8DCCD91865BBBD006A75E9 /* Main_iPhone.storyboard in Resources */,
+				CBCD9B0C1869E0F2008F26DA /* center-highlighted.png in Resources */,
+				CBE2249A186875DB0018EF3D /* center@2x.png in Resources */,
+				CBE22499186875DB0018EF3D /* center.png in Resources */,
+				CB8DCCD01865BBBD006A75E9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8DCCE41865BBBD006A75E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8DCCF21865BBBD006A75E9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB8DCCBE1865BBBD006A75E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8DCCDF1865BBBD006A75E9 /* ViewController.m in Sources */,
+				CB8DCD031865BC3D006A75E9 /* PininterestLikeMenuItem.m in Sources */,
+				CB8DCCD61865BBBD006A75E9 /* AppDelegate.m in Sources */,
+				CB8DCCD21865BBBD006A75E9 /* main.m in Sources */,
+				CB8DCD001865BC0E006A75E9 /* PininterestLikeMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB8DCCE21865BBBD006A75E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB8DCCF41865BBBD006A75E9 /* PininterestLikeMenuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB8DCCEC1865BBBD006A75E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB8DCCC11865BBBD006A75E9 /* PininterestLikeMenu */;
+			targetProxy = CB8DCCEB1865BBBD006A75E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB8DCCCE1865BBBD006A75E9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB8DCCCF1865BBBD006A75E9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CB8DCCD71865BBBD006A75E9 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB8DCCD81865BBBD006A75E9 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CB8DCCDA1865BBBD006A75E9 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB8DCCDB1865BBBD006A75E9 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		CB8DCCF01865BBBD006A75E9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB8DCCF11865BBBD006A75E9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB8DCCF51865BBBD006A75E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB8DCCF61865BBBD006A75E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB8DCCF81865BBBD006A75E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PininterestLikeMenu/PininterestLikeMenu-Prefix.pch";
+				INFOPLIST_FILE = "PininterestLikeMenu/PininterestLikeMenu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CB8DCCF91865BBBD006A75E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PininterestLikeMenu/PininterestLikeMenu-Prefix.pch";
+				INFOPLIST_FILE = "PininterestLikeMenu/PininterestLikeMenu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CB8DCCFB1865BBBD006A75E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PininterestLikeMenu.app/PininterestLikeMenu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PininterestLikeMenu/PininterestLikeMenu-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PininterestLikeMenuTests/PininterestLikeMenuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CB8DCCFC1865BBBD006A75E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PininterestLikeMenu.app/PininterestLikeMenu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PininterestLikeMenu/PininterestLikeMenu-Prefix.pch";
+				INFOPLIST_FILE = "PininterestLikeMenuTests/PininterestLikeMenuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB8DCCBD1865BBBD006A75E9 /* Build configuration list for PBXProject "PininterestLikeMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8DCCF51865BBBD006A75E9 /* Debug */,
+				CB8DCCF61865BBBD006A75E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB8DCCF71865BBBD006A75E9 /* Build configuration list for PBXNativeTarget "PininterestLikeMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8DCCF81865BBBD006A75E9 /* Debug */,
+				CB8DCCF91865BBBD006A75E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB8DCCFA1865BBBD006A75E9 /* Build configuration list for PBXNativeTarget "PininterestLikeMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8DCCFB1865BBBD006A75E9 /* Debug */,
+				CB8DCCFC1865BBBD006A75E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB8DCCBA1865BBBD006A75E9 /* Project object */;
+}
