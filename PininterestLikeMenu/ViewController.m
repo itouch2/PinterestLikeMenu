@@ -31,24 +31,26 @@
 
 - (void)showMenu
 {
-    PininterestLikeMenuItem *item0 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
-                                                                       selctedImage:[UIImage imageNamed:@"center-highlighted"]
-                                                                      selectedBlock:^(void) {
-                                                                          NSLog(@"item 0 selected");
-                                                                      }];
-    PininterestLikeMenuItem *item1 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
-                                                                       selctedImage:[UIImage imageNamed:@"center-highlighted"]
-                                                                      selectedBlock:^(void) {
-                                                                          NSLog(@"item 1 selected");
-                                                                      }];
-    PininterestLikeMenuItem *item2 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
-                                                                       selctedImage:[UIImage imageNamed:@"center-highlighted"]
-                                                                      selectedBlock:^(void) {
-                                                                          NSLog(@"item 2 selcted");
-                                                                      }];
-    NSArray *subMenus = @[item0, item1, item2];
-    
-    self.menu = [[PininterestLikeMenu alloc] initWithSubMenus:subMenus withStartPoint:self.beginLocation];
+    if (!self.menu) {
+        PininterestLikeMenuItem *item0 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
+                                                                           selctedImage:[UIImage imageNamed:@"center-highlighted"]
+                                                                          selectedBlock:^(void) {
+                                                                              NSLog(@"item 0 selected");
+                                                                          }];
+        PininterestLikeMenuItem *item1 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
+                                                                           selctedImage:[UIImage imageNamed:@"center-highlighted"]
+                                                                          selectedBlock:^(void) {
+                                                                              NSLog(@"item 1 selected");
+                                                                          }];
+        PininterestLikeMenuItem *item2 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
+                                                                           selctedImage:[UIImage imageNamed:@"center-highlighted"]
+                                                                          selectedBlock:^(void) {
+                                                                              NSLog(@"item 2 selcted");
+                                                                          }];
+        NSArray *subMenus = @[item0, item1, item2];
+        
+        self.menu = [[PininterestLikeMenu alloc] initWithSubMenus:subMenus withStartPoint:self.beginLocation];
+    }
     
     [self.menu show];
 
