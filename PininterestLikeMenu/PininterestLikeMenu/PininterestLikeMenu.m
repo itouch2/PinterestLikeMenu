@@ -59,25 +59,13 @@
 - (void)show
 {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    
     [window addSubview:self];
-}
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [super touchesBegan:touches withEvent:event];
     
     [self appear];
 }
 
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)updataLocation:(CGPoint)touchedPoint
 {
-    [super touchesMoved:touches withEvent:event];
-    
-    UITouch *touch = [touches anyObject];
-    
-    CGPoint touchedPoint = [touch locationInView:self];
-    
     int closestIndex = 0;
     float minDistance = CGFLOAT_MAX;
     
@@ -133,17 +121,11 @@
             }];
         }
     }
+
 }
 
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)finished:(CGPoint)location
 {
-    [super touchesCancelled:touches withEvent:event];
-}
-
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [super touchesEnded:touches withEvent:event];
-    
     for (int i = 0; i < self.subMenus.count; i++)
     {
         PininterestLikeMenuItem *menuItem = self.subMenus[i];

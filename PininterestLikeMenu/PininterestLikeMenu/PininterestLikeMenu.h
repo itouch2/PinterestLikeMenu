@@ -15,4 +15,7 @@
 
 - (void)show;
 
+- (void)updataLocation:(CGPoint)location;
+- (void)finished:(CGPoint)location;
+
 @end

@@ -11,6 +11,9 @@
 
 @interface ViewController ()
 
+@property (nonatomic, assign) CGPoint beginLocation;
+@property (nonatomic, strong) PininterestLikeMenu *menu;
+
 @end
 
 @implementation ViewController
@@ -21,17 +24,13 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     UILongPressGestureRecognizer *gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(popPininterestMenu:)];
+    gesture.delegate = self;
     [self.view addGestureRecognizer:gesture];
     
 }
 
-- (void)popPininterestMenu:(UIGestureRecognizer *)gesture
+- (void)showMenu
 {
-    if (gesture.state != UIGestureRecognizerStateBegan)
-    {
-        return ;
-    }
-    
     PininterestLikeMenuItem *item0 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
                                                                        selctedImage:[UIImage imageNamed:@"center-highlighted"]
                                                                       selectedBlock:^(void) {
@@ -49,11 +48,33 @@
                                                                       }];
     NSArray *subMenus = @[item0, item1, item2];
     
-    CGPoint startPoint = [gesture locationInView:self.view];
+    self.menu = [[PininterestLikeMenu alloc] initWithSubMenus:subMenus withStartPoint:self.beginLocation];
     
-    PininterestLikeMenu *menu = [[PininterestLikeMenu alloc] initWithSubMenus:subMenus withStartPoint:startPoint];
-    
-    [menu show];
+    [self.menu show];
+
+}
+
+- (void)popPininterestMenu:(UIGestureRecognizer *)gesture
+{
+    CGPoint location = [gesture locationInView:self.view.window];
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+        self.beginLocation = location;
+        [self showMenu];
+    }
+    else if (gesture.state == UIGestureRecognizerStateChanged)
+    {
+        [self.menu updataLocation:location];
+    }
+    else{
+        self.beginLocation = CGPointZero;
+        [self.menu finished:location];
+        self.menu = nil;
+    }
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning
