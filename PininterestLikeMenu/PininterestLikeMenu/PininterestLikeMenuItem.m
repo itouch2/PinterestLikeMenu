@@ -8,6 +8,8 @@
 
 #import "PininterestLikeMenuItem.h"
 
+
+
 @interface PininterestLikeMenuItem ()
 
 @property (nonatomic, strong) UIImageView *imageView;
@@ -30,7 +32,7 @@
 {
     if (self = [super init])
     {
-        self.bounds = CGRectMake(0, 0, 40, 40);
+        self.bounds = CGRectMake(0, 0, kMenuItemLength, kMenuItemLength);
         
         self.imageView = [[UIImageView alloc] initWithImage:image];
         self.imageView.frame = self.bounds;

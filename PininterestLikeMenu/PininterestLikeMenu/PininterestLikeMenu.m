@@ -16,15 +16,19 @@
 
 @interface PininterestLikeMenu ()
 
-@property (nonatomic, strong) NSArray *subMenus;
-@property (nonatomic, assign) CGPoint startPoint;
+@property (nonatomic, strong) NSArray *submenus;
 @property (nonatomic, strong) UIImageView *startImageView;
 
 @end
 
 @implementation PininterestLikeMenu
 
-- (id)initWithSubMenus:(NSArray *)subMenus withStartPoint:(CGPoint)point
+- (id)initWithSubmenus:(NSArray *)submenus
+{
+    return [self initWithSubmenus:submenus startPoint:CGPointZero];
+}
+
+- (id)initWithSubmenus:(NSArray *)submenus startPoint:(CGPoint)point
 {
     if (self = [super init])
     {
@@ -32,28 +36,39 @@
         
         self.backgroundColor = [UIColor colorWithWhite:0.2 alpha:0.5];
         
-        self.subMenus = subMenus;
+        self.submenus = submenus;
         
-        self.startImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
-        
-        point.x = point.x < 20 ? 20 : point.x;
-        point.x = point.x > (320 - 20) ? (320 - 20) : point.x;
+        self.startImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kMenuItemLength, kMenuItemLength)];
+        self.startImageView.image = [UIImage imageNamed:@"center"];
         
         self.startPoint = point;
-        self.startImageView.center = point;
-        self.startImageView.image = [UIImage imageNamed:@"center"];
+        
+        for (int i = 0; i < self.submenus.count; i++)
+        {
+            ((UIView *)(self.submenus[i])).center = self.startPoint;
+            
+            [self addSubview:self.submenus[i]];
+        }
         
         [self addSubview:self.startImageView];
         
-        // TODO: CONSIDER SUBMENUS > 3
-        for (int i = 0; i < self.subMenus.count; i++)
-        {
-            ((UIView *)(self.subMenus[i])).center = self.startPoint;
-
-            [self addSubview:self.subMenus[i]];
-        }
     }
     return self;
+}
+
+- (void)setStartPoint:(CGPoint)point
+{
+    point.x = point.x < kMenuItemLength / 2 ? kMenuItemLength / 2 : point.x;
+    point.x = point.x > (320 - kMenuItemLength / 2) ? (320 - kMenuItemLength / 2) : point.x;
+    
+    _startPoint = point;
+    
+    _startImageView.center = point;
+    
+    for (int i = 0; i < self.submenus.count; i++)
+    {
+        ((UIView *)(self.submenus[i])).center = self.startPoint;
+    }
 }
 
 - (void)show
@@ -70,7 +85,7 @@
     float minDistance = CGFLOAT_MAX;
     
     // find the cloest menu item
-    for (int i = 0; i < self.subMenus.count; i++)
+    for (int i = 0; i < self.submenus.count; i++)
     {
         CGPoint floatingPoint = [self floatingPointWithIndex:i];
         
@@ -83,9 +98,9 @@
         }
     }
     
-    for (int i = 0; i < self.subMenus.count; i++)
+    for (int i = 0; i < self.submenus.count; i++)
     {
-        PininterestLikeMenuItem *menuItem = self.subMenus[i];
+        PininterestLikeMenuItem *menuItem = self.submenus[i];
         
         // the cloest point
         if (i == closestIndex)
@@ -124,11 +139,11 @@
 
 }
 
-- (void)finished:(CGPoint)location
+- (void)finished
 {
-    for (int i = 0; i < self.subMenus.count; i++)
+    for (int i = 0; i < self.submenus.count; i++)
     {
-        PininterestLikeMenuItem *menuItem = self.subMenus[i];
+        PininterestLikeMenuItem *menuItem = self.submenus[i];
         if (menuItem.selected)
         {
             if (menuItem.selectedBlock)
@@ -143,7 +158,7 @@
 
 - (void)moveWithIndex:(int)index offsetOfFloatingPoint:(float)offset
 {
-    UIView *menuItem = (UIView *)self.subMenus[index];
+    UIView *menuItem = (UIView *)self.submenus[index];
     CGPoint floating = [self floatingPointWithIndex:index];
     float radian = [self radianWithIndex:index];
     radian = radian - M_PI;
@@ -157,7 +172,7 @@
     float radian = [self radianWithIndex:index];
     float x = kLength * cos(radian);
     float y = kLength * sin(radian);
-    UIView *view = self.subMenus[index];
+    UIView *view = self.submenus[index];
     view.center = CGPointMake(_startPoint.x + x, _startPoint.y + y);
 }
 
@@ -172,7 +187,7 @@
 
 - (float)radianWithIndex:(int)index
 {
-    NSUInteger count = self.subMenus.count;
+    NSUInteger count = self.submenus.count;
     
     // from 3/2 -> 2/2  0 -> 320 (20 -> 300)
     
@@ -185,7 +200,7 @@
 
 - (void)appear
 {
-    for (int i = 0; i < self.subMenus.count; i++)
+    for (int i = 0; i < self.submenus.count; i++)
     {
         [self pulseTheMenuAtIndex:i];
     }
@@ -202,7 +217,7 @@
 
 - (void)pulseTheMenuAtIndex:(int)index
 {
-    UIView *view = (UIView *)self.subMenus[index];
+    UIView *view = (UIView *)self.submenus[index];
     [UIView animateWithDuration:0.25
                           delay:0
                         options:UIViewAnimationOptionCurveEaseIn

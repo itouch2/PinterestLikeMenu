@@ -11,7 +11,6 @@
 
 @interface ViewController ()
 
-@property (nonatomic, assign) CGPoint beginLocation;
 @property (nonatomic, strong) PininterestLikeMenu *menu;
 
 @end
@@ -25,13 +24,14 @@
     
     UILongPressGestureRecognizer *gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(popPininterestMenu:)];
     gesture.delegate = self;
-    [self.view addGestureRecognizer:gesture];
     
+    [self.view addGestureRecognizer:gesture];
 }
 
-- (void)showMenu
+- (PininterestLikeMenu *)menu
 {
-    if (!self.menu) {
+    if (!_menu)
+    {
         PininterestLikeMenuItem *item0 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
                                                                            selctedImage:[UIImage imageNamed:@"center-highlighted"]
                                                                           selectedBlock:^(void) {
@@ -47,29 +47,31 @@
                                                                           selectedBlock:^(void) {
                                                                               NSLog(@"item 2 selcted");
                                                                           }];
-        NSArray *subMenus = @[item0, item1, item2];
+        NSArray *submenus = @[item0, item1, item2];
         
-        self.menu = [[PininterestLikeMenu alloc] initWithSubMenus:subMenus withStartPoint:self.beginLocation];
-    }
-    
-    [self.menu show];
+        self.menu = [[PininterestLikeMenu alloc] initWithSubmenus:submenus];
 
+    }
+    return _menu;
 }
 
 - (void)popPininterestMenu:(UIGestureRecognizer *)gesture
 {
     CGPoint location = [gesture locationInView:self.view.window];
-    if (gesture.state == UIGestureRecognizerStateBegan) {
-        self.beginLocation = location;
-        [self showMenu];
+    
+    if (gesture.state == UIGestureRecognizerStateBegan)
+    {
+        // set the start point where the menu showing up
+        self.menu.startPoint = location;
+        [self.menu show];
     }
     else if (gesture.state == UIGestureRecognizerStateChanged)
     {
         [self.menu updataLocation:location];
     }
-    else{
-        self.beginLocation = CGPointZero;
-        [self.menu finished:location];
+    else
+    {
+        [self.menu finished];
         self.menu = nil;
     }
 }

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define kMenuItemLength  (40)
+
 typedef void(^SelectedBlock)(void);
 
 @interface PininterestLikeMenuItem : UIView

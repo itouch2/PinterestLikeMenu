@@ -11,11 +11,13 @@
 
 @interface PininterestLikeMenu : UIView
 
-- (id)initWithSubMenus:(NSArray *)subMenus withStartPoint:(CGPoint)point;
+@property (nonatomic, assign) CGPoint startPoint;
+
+- (id)initWithSubmenus:(NSArray *)submenus;
+- (id)initWithSubmenus:(NSArray *)submenus startPoint:(CGPoint)point;
 
 - (void)show;
-
 - (void)updataLocation:(CGPoint)location;
-- (void)finished:(CGPoint)location;
+- (void)finished;
 
 @end
