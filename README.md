@@ -1,4 +1,4 @@
-PininterestLikeMenu
+PinterestLikeMenu
 ===================
 
 A kind of pop-up menu
@@ -7,28 +7,28 @@ A kind of pop-up menu
 
 First, the menu can be initialized with:
 
-        PininterestLikeMenuItem *item0 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
+        PinterestLikeMenuItem *item0 = [[PinterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
                                                                            selctedImage:[UIImage imageNamed:@"center-highlighted"]
                                                                           selectedBlock:^(void) {
                                                                               NSLog(@"item 0 selected");
                                                                           }];
-        PininterestLikeMenuItem *item1 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
+        PinterestLikeMenuItem *item1 = [[PinterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
                                                                            selctedImage:[UIImage imageNamed:@"center-highlighted"]
                                                                           selectedBlock:^(void) {
                                                                               NSLog(@"item 1 selected");
                                                                           }];
-        PininterestLikeMenuItem *item2 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
+        PinterestLikeMenuItem *item2 = [[PinterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
                                                                            selctedImage:[UIImage imageNamed:@"center-highlighted"]
                                                                           selectedBlock:^(void) {
                                                                               NSLog(@"item 2 selcted");
                                                                           }];
         NSArray *submenus = @[item0, item1, item2];
         
-        self.menu = [[PininterestLikeMenu alloc] initWithSubmenus:submenus];
+        self.menu = [[PinterestLikeMenu alloc] initWithSubmenus:submenus];
 
 To use this pop-up menu, you should add a long press gesture recognizer to the target view with:
 
-    - (void)popPininterestMenu:(UIGestureRecognizer *)gesture
+    - (void)popPinterestMenu:(UIGestureRecognizer *)gesture
     {
         CGPoint location = [gesture locationInView:self.view.window];
         if (gesture.state == UIGestureRecognizerStateBegan)
