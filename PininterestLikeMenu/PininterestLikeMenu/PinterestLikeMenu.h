@@ -1,15 +1,15 @@
 //
-//  PininterestLikeMenu.h
-//  PininterestLikeMenu
+//  PinterestLikeMenu.h
+//  PinterestLikeMenu
 //
 //  Created by Tu You on 12/21/13.
 //  Copyright (c) 2013 Tu You. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "PininterestLikeMenuItem.h"
+#import "PinterestLikeMenuItem.h"
 
-@interface PininterestLikeMenu : UIView
+@interface PinterestLikeMenu : UIView
 
 @property (nonatomic, assign) CGPoint startPoint;
 

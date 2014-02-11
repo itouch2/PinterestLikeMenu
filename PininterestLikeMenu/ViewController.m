@@ -1,17 +1,17 @@
 //
 //  ViewController.m
-//  PininterestLikeMenu
+//  PinterestLikeMenu
 //
 //  Created by Tu You on 12/21/13.
 //  Copyright (c) 2013 Tu You. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "PininterestLikeMenu.h"
+#import "PinterestLikeMenu.h"
 
 @interface ViewController ()
 
-@property (nonatomic, strong) PininterestLikeMenu *menu;
+@property (nonatomic, strong) PinterestLikeMenu *menu;
 
 @end
 
@@ -28,28 +28,28 @@
     [self.view addGestureRecognizer:gesture];
 }
 
-- (PininterestLikeMenu *)menu
+- (PinterestLikeMenu *)menu
 {
     if (!_menu)
     {
-        PininterestLikeMenuItem *item0 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
+        PinterestLikeMenuItem *item0 = [[PinterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
                                                                            selctedImage:[UIImage imageNamed:@"center-highlighted"]
                                                                           selectedBlock:^(void) {
                                                                               NSLog(@"item 0 selected");
                                                                           }];
-        PininterestLikeMenuItem *item1 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
+        PinterestLikeMenuItem *item1 = [[PinterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
                                                                            selctedImage:[UIImage imageNamed:@"center-highlighted"]
                                                                           selectedBlock:^(void) {
                                                                               NSLog(@"item 1 selected");
                                                                           }];
-        PininterestLikeMenuItem *item2 = [[PininterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
+        PinterestLikeMenuItem *item2 = [[PinterestLikeMenuItem alloc] initWithImage:[UIImage imageNamed:@"center"]
                                                                            selctedImage:[UIImage imageNamed:@"center-highlighted"]
                                                                           selectedBlock:^(void) {
                                                                               NSLog(@"item 2 selcted");
                                                                           }];
         NSArray *submenus = @[item0, item1, item2];
         
-        self.menu = [[PininterestLikeMenu alloc] initWithSubmenus:submenus];
+        self.menu = [[PinterestLikeMenu alloc] initWithSubmenus:submenus];
 
     }
     return _menu;

@@ -6,18 +6,18 @@
 //  Copyright (c) 2013 Tu You. All rights reserved.
 //
 
-#import "PininterestLikeMenuItem.h"
+#import "PinterestLikeMenuItem.h"
 
 
 
-@interface PininterestLikeMenuItem ()
+@interface PinterestLikeMenuItem ()
 
 @property (nonatomic, strong) UIImageView *imageView;
 
 @end
 
 
-@implementation PininterestLikeMenuItem
+@implementation PinterestLikeMenuItem
 
 - (id)initWithFrame:(CGRect)frame
 {

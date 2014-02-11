@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB29B3DD18AA2F2100EAE9AC /* PinterestLikeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CB29B3DA18AA2F2100EAE9AC /* PinterestLikeMenu.m */; };
+		CB29B3DE18AA2F2100EAE9AC /* PinterestLikeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB29B3DC18AA2F2100EAE9AC /* PinterestLikeMenuItem.m */; };
 		CB8DCCC61865BBBD006A75E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DCCC51865BBBD006A75E9 /* Foundation.framework */; };
 		CB8DCCC81865BBBD006A75E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DCCC71865BBBD006A75E9 /* CoreGraphics.framework */; };
 		CB8DCCCA1865BBBD006A75E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DCCC91865BBBD006A75E9 /* UIKit.framework */; };
@@ -20,10 +22,6 @@
 		CB8DCCE81865BBBD006A75E9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DCCE71865BBBD006A75E9 /* XCTest.framework */; };
 		CB8DCCE91865BBBD006A75E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DCCC51865BBBD006A75E9 /* Foundation.framework */; };
 		CB8DCCEA1865BBBD006A75E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DCCC91865BBBD006A75E9 /* UIKit.framework */; };
-		CB8DCCF21865BBBD006A75E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB8DCCF01865BBBD006A75E9 /* InfoPlist.strings */; };
-		CB8DCCF41865BBBD006A75E9 /* PininterestLikeMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8DCCF31865BBBD006A75E9 /* PininterestLikeMenuTests.m */; };
-		CB8DCD001865BC0E006A75E9 /* PininterestLikeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8DCCFF1865BC0E006A75E9 /* PininterestLikeMenu.m */; };
-		CB8DCD031865BC3D006A75E9 /* PininterestLikeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8DCD021865BC3D006A75E9 /* PininterestLikeMenuItem.m */; };
 		CBCD9B0C1869E0F2008F26DA /* center-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCD9B0A1869E0F2008F26DA /* center-highlighted.png */; };
 		CBCD9B0D1869E0F2008F26DA /* center-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCD9B0B1869E0F2008F26DA /* center-highlighted@2x.png */; };
 		CBE22499186875DB0018EF3D /* center.png in Resources */ = {isa = PBXBuildFile; fileRef = CBE22497186875DB0018EF3D /* center.png */; };
@@ -41,14 +39,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB8DCCC21865BBBD006A75E9 /* PininterestLikeMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PininterestLikeMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB29B3D918AA2F2100EAE9AC /* PinterestLikeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestLikeMenu.h; sourceTree = "<group>"; };
+		CB29B3DA18AA2F2100EAE9AC /* PinterestLikeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestLikeMenu.m; sourceTree = "<group>"; };
+		CB29B3DB18AA2F2100EAE9AC /* PinterestLikeMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestLikeMenuItem.h; sourceTree = "<group>"; };
+		CB29B3DC18AA2F2100EAE9AC /* PinterestLikeMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestLikeMenuItem.m; sourceTree = "<group>"; };
+		CB8DCCC21865BBBD006A75E9 /* PinterestLikeMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinterestLikeMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8DCCC51865BBBD006A75E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CB8DCCC71865BBBD006A75E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CB8DCCC91865BBBD006A75E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CB8DCCCD1865BBBD006A75E9 /* PininterestLikeMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PininterestLikeMenu-Info.plist"; sourceTree = "<group>"; };
+		CB8DCCCD1865BBBD006A75E9 /* PinterestLikeMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PinterestLikeMenu-Info.plist"; sourceTree = "<group>"; };
 		CB8DCCCF1865BBBD006A75E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB8DCCD11865BBBD006A75E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CB8DCCD31865BBBD006A75E9 /* PininterestLikeMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PininterestLikeMenu-Prefix.pch"; sourceTree = "<group>"; };
+		CB8DCCD31865BBBD006A75E9 /* PinterestLikeMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinterestLikeMenu-Prefix.pch"; sourceTree = "<group>"; };
 		CB8DCCD41865BBBD006A75E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB8DCCD51865BBBD006A75E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CB8DCCD81865BBBD006A75E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -56,15 +58,8 @@
 		CB8DCCDD1865BBBD006A75E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CB8DCCDE1865BBBD006A75E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CB8DCCE01865BBBD006A75E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CB8DCCE61865BBBD006A75E9 /* PininterestLikeMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PininterestLikeMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8DCCE61865BBBD006A75E9 /* PinterestLikeMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinterestLikeMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8DCCE71865BBBD006A75E9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		CB8DCCEF1865BBBD006A75E9 /* PininterestLikeMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PininterestLikeMenuTests-Info.plist"; sourceTree = "<group>"; };
-		CB8DCCF11865BBBD006A75E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CB8DCCF31865BBBD006A75E9 /* PininterestLikeMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PininterestLikeMenuTests.m; sourceTree = "<group>"; };
-		CB8DCCFE1865BC0E006A75E9 /* PininterestLikeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PininterestLikeMenu.h; sourceTree = "<group>"; };
-		CB8DCCFF1865BC0E006A75E9 /* PininterestLikeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PininterestLikeMenu.m; sourceTree = "<group>"; };
-		CB8DCD011865BC3D006A75E9 /* PininterestLikeMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PininterestLikeMenuItem.h; sourceTree = "<group>"; };
-		CB8DCD021865BC3D006A75E9 /* PininterestLikeMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PininterestLikeMenuItem.m; sourceTree = "<group>"; };
 		CBCD9B0A1869E0F2008F26DA /* center-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "center-highlighted.png"; sourceTree = "<group>"; };
 		CBCD9B0B1869E0F2008F26DA /* center-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "center-highlighted@2x.png"; sourceTree = "<group>"; };
 		CBE22497186875DB0018EF3D /* center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = center.png; sourceTree = "<group>"; };
@@ -95,11 +90,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB29B3D818AA2F2100EAE9AC /* PininterestLikeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CB29B3D918AA2F2100EAE9AC /* PinterestLikeMenu.h */,
+				CB29B3DA18AA2F2100EAE9AC /* PinterestLikeMenu.m */,
+				CB29B3DB18AA2F2100EAE9AC /* PinterestLikeMenuItem.h */,
+				CB29B3DC18AA2F2100EAE9AC /* PinterestLikeMenuItem.m */,
+			);
+			path = PininterestLikeMenu;
+			sourceTree = "<group>";
+		};
 		CB8DCCB91865BBBD006A75E9 = {
 			isa = PBXGroup;
 			children = (
 				CB8DCCCB1865BBBD006A75E9 /* PininterestLikeMenu */,
-				CB8DCCED1865BBBD006A75E9 /* PininterestLikeMenuTests */,
 				CB8DCCC41865BBBD006A75E9 /* Frameworks */,
 				CB8DCCC31865BBBD006A75E9 /* Products */,
 			);
@@ -108,8 +113,8 @@
 		CB8DCCC31865BBBD006A75E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB8DCCC21865BBBD006A75E9 /* PininterestLikeMenu.app */,
-				CB8DCCE61865BBBD006A75E9 /* PininterestLikeMenuTests.xctest */,
+				CB8DCCC21865BBBD006A75E9 /* PinterestLikeMenu.app */,
+				CB8DCCE61865BBBD006A75E9 /* PinterestLikeMenuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,7 +139,7 @@
 				CB8DCCDA1865BBBD006A75E9 /* Main_iPad.storyboard */,
 				CB8DCCDD1865BBBD006A75E9 /* ViewController.h */,
 				CB8DCCDE1865BBBD006A75E9 /* ViewController.m */,
-				CB8DCCFD1865BC00006A75E9 /* PininterestLikeMenu */,
+				CB29B3D818AA2F2100EAE9AC /* PininterestLikeMenu */,
 				CBE22496186875DB0018EF3D /* images */,
 				CB8DCCE01865BBBD006A75E9 /* Images.xcassets */,
 				CB8DCCCC1865BBBD006A75E9 /* Supporting Files */,
@@ -145,41 +150,12 @@
 		CB8DCCCC1865BBBD006A75E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB8DCCCD1865BBBD006A75E9 /* PininterestLikeMenu-Info.plist */,
+				CB8DCCCD1865BBBD006A75E9 /* PinterestLikeMenu-Info.plist */,
 				CB8DCCCE1865BBBD006A75E9 /* InfoPlist.strings */,
 				CB8DCCD11865BBBD006A75E9 /* main.m */,
-				CB8DCCD31865BBBD006A75E9 /* PininterestLikeMenu-Prefix.pch */,
+				CB8DCCD31865BBBD006A75E9 /* PinterestLikeMenu-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CB8DCCED1865BBBD006A75E9 /* PininterestLikeMenuTests */ = {
-			isa = PBXGroup;
-			children = (
-				CB8DCCF31865BBBD006A75E9 /* PininterestLikeMenuTests.m */,
-				CB8DCCEE1865BBBD006A75E9 /* Supporting Files */,
-			);
-			path = PininterestLikeMenuTests;
-			sourceTree = "<group>";
-		};
-		CB8DCCEE1865BBBD006A75E9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CB8DCCEF1865BBBD006A75E9 /* PininterestLikeMenuTests-Info.plist */,
-				CB8DCCF01865BBBD006A75E9 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CB8DCCFD1865BC00006A75E9 /* PininterestLikeMenu */ = {
-			isa = PBXGroup;
-			children = (
-				CB8DCCFE1865BC0E006A75E9 /* PininterestLikeMenu.h */,
-				CB8DCCFF1865BC0E006A75E9 /* PininterestLikeMenu.m */,
-				CB8DCD011865BC3D006A75E9 /* PininterestLikeMenuItem.h */,
-				CB8DCD021865BC3D006A75E9 /* PininterestLikeMenuItem.m */,
-			);
-			path = PininterestLikeMenu;
 			sourceTree = "<group>";
 		};
 		CBE22496186875DB0018EF3D /* images */ = {
@@ -196,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB8DCCC11865BBBD006A75E9 /* PininterestLikeMenu */ = {
+		CB8DCCC11865BBBD006A75E9 /* PinterestLikeMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB8DCCF71865BBBD006A75E9 /* Build configuration list for PBXNativeTarget "PininterestLikeMenu" */;
+			buildConfigurationList = CB8DCCF71865BBBD006A75E9 /* Build configuration list for PBXNativeTarget "PinterestLikeMenu" */;
 			buildPhases = (
 				CB8DCCBE1865BBBD006A75E9 /* Sources */,
 				CB8DCCBF1865BBBD006A75E9 /* Frameworks */,
@@ -208,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = PininterestLikeMenu;
+			name = PinterestLikeMenu;
 			productName = PininterestLikeMenu;
-			productReference = CB8DCCC21865BBBD006A75E9 /* PininterestLikeMenu.app */;
+			productReference = CB8DCCC21865BBBD006A75E9 /* PinterestLikeMenu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CB8DCCE51865BBBD006A75E9 /* PininterestLikeMenuTests */ = {
+		CB8DCCE51865BBBD006A75E9 /* PinterestLikeMenuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB8DCCFA1865BBBD006A75E9 /* Build configuration list for PBXNativeTarget "PininterestLikeMenuTests" */;
+			buildConfigurationList = CB8DCCFA1865BBBD006A75E9 /* Build configuration list for PBXNativeTarget "PinterestLikeMenuTests" */;
 			buildPhases = (
 				CB8DCCE21865BBBD006A75E9 /* Sources */,
 				CB8DCCE31865BBBD006A75E9 /* Frameworks */,
@@ -226,9 +202,9 @@
 			dependencies = (
 				CB8DCCEC1865BBBD006A75E9 /* PBXTargetDependency */,
 			);
-			name = PininterestLikeMenuTests;
+			name = PinterestLikeMenuTests;
 			productName = PininterestLikeMenuTests;
-			productReference = CB8DCCE61865BBBD006A75E9 /* PininterestLikeMenuTests.xctest */;
+			productReference = CB8DCCE61865BBBD006A75E9 /* PinterestLikeMenuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -245,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CB8DCCBD1865BBBD006A75E9 /* Build configuration list for PBXProject "PininterestLikeMenu" */;
+			buildConfigurationList = CB8DCCBD1865BBBD006A75E9 /* Build configuration list for PBXProject "PinterestLikeMenu" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -258,8 +234,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB8DCCC11865BBBD006A75E9 /* PininterestLikeMenu */,
-				CB8DCCE51865BBBD006A75E9 /* PininterestLikeMenuTests */,
+				CB8DCCC11865BBBD006A75E9 /* PinterestLikeMenu */,
+				CB8DCCE51865BBBD006A75E9 /* PinterestLikeMenuTests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +260,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8DCCF21865BBBD006A75E9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,10 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8DCCDF1865BBBD006A75E9 /* ViewController.m in Sources */,
-				CB8DCD031865BC3D006A75E9 /* PininterestLikeMenuItem.m in Sources */,
+				CB29B3DE18AA2F2100EAE9AC /* PinterestLikeMenuItem.m in Sources */,
 				CB8DCCD61865BBBD006A75E9 /* AppDelegate.m in Sources */,
+				CB29B3DD18AA2F2100EAE9AC /* PinterestLikeMenu.m in Sources */,
 				CB8DCCD21865BBBD006A75E9 /* main.m in Sources */,
-				CB8DCD001865BC0E006A75E9 /* PininterestLikeMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8DCCF41865BBBD006A75E9 /* PininterestLikeMenuTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +290,7 @@
 /* Begin PBXTargetDependency section */
 		CB8DCCEC1865BBBD006A75E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB8DCCC11865BBBD006A75E9 /* PininterestLikeMenu */;
+			target = CB8DCCC11865BBBD006A75E9 /* PinterestLikeMenu */;
 			targetProxy = CB8DCCEB1865BBBD006A75E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -344,14 +318,6 @@
 				CB8DCCDB1865BBBD006A75E9 /* Base */,
 			);
 			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		CB8DCCF01865BBBD006A75E9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB8DCCF11865BBBD006A75E9 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -437,9 +403,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PininterestLikeMenu/PininterestLikeMenu-Prefix.pch";
-				INFOPLIST_FILE = "PininterestLikeMenu/PininterestLikeMenu-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "PininterestLikeMenu/PinterestLikeMenu-Prefix.pch";
+				INFOPLIST_FILE = "PininterestLikeMenu/PinterestLikeMenu-Info.plist";
+				PRODUCT_NAME = PinterestLikeMenu;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -450,9 +416,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PininterestLikeMenu/PininterestLikeMenu-Prefix.pch";
-				INFOPLIST_FILE = "PininterestLikeMenu/PininterestLikeMenu-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "PininterestLikeMenu/PinterestLikeMenu-Prefix.pch";
+				INFOPLIST_FILE = "PininterestLikeMenu/PinterestLikeMenu-Info.plist";
+				PRODUCT_NAME = PinterestLikeMenu;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -473,8 +439,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "PininterestLikeMenuTests/PininterestLikeMenuTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "PininterestLikeMenuTests/PinterestLikeMenuTests-Info.plist";
+				PRODUCT_NAME = PinterestLikeMenuTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -492,8 +458,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PininterestLikeMenu/PininterestLikeMenu-Prefix.pch";
-				INFOPLIST_FILE = "PininterestLikeMenuTests/PininterestLikeMenuTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "PininterestLikeMenuTests/PinterestLikeMenuTests-Info.plist";
+				PRODUCT_NAME = PinterestLikeMenuTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -502,7 +468,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB8DCCBD1865BBBD006A75E9 /* Build configuration list for PBXProject "PininterestLikeMenu" */ = {
+		CB8DCCBD1865BBBD006A75E9 /* Build configuration list for PBXProject "PinterestLikeMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB8DCCF51865BBBD006A75E9 /* Debug */,
@@ -511,7 +477,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB8DCCF71865BBBD006A75E9 /* Build configuration list for PBXNativeTarget "PininterestLikeMenu" */ = {
+		CB8DCCF71865BBBD006A75E9 /* Build configuration list for PBXNativeTarget "PinterestLikeMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB8DCCF81865BBBD006A75E9 /* Debug */,
@@ -520,7 +486,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB8DCCFA1865BBBD006A75E9 /* Build configuration list for PBXNativeTarget "PininterestLikeMenuTests" */ = {
+		CB8DCCFA1865BBBD006A75E9 /* Build configuration list for PBXNativeTarget "PinterestLikeMenuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB8DCCFB1865BBBD006A75E9 /* Debug */,

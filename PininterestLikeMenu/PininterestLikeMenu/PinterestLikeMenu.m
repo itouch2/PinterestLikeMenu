@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Tu You. All rights reserved.
 //
 
-#import "PininterestLikeMenu.h"
+#import "PinterestLikeMenu.h"
 
 #define kMaxAngle        M_PI_2
 #define kMaxLength       (95)
@@ -14,14 +14,14 @@
 #define kBounceLength    (18)
 #define kPulseLength     (60)
 
-@interface PininterestLikeMenu ()
+@interface PinterestLikeMenu ()
 
 @property (nonatomic, strong) NSArray *submenus;
 @property (nonatomic, strong) UIImageView *startImageView;
 
 @end
 
-@implementation PininterestLikeMenu
+@implementation PinterestLikeMenu
 
 - (id)initWithSubmenus:(NSArray *)submenus
 {
@@ -100,7 +100,7 @@
     
     for (int i = 0; i < self.submenus.count; i++)
     {
-        PininterestLikeMenuItem *menuItem = self.submenus[i];
+        PinterestLikeMenuItem *menuItem = self.submenus[i];
         
         // the cloest point
         if (i == closestIndex)
@@ -143,7 +143,7 @@
 {
     for (int i = 0; i < self.submenus.count; i++)
     {
-        PininterestLikeMenuItem *menuItem = self.submenus[i];
+        PinterestLikeMenuItem *menuItem = self.submenus[i];
         if (menuItem.selected)
         {
             if (menuItem.selectedBlock)

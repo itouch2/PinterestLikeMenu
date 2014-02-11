@@ -1,6 +1,6 @@
 //
-//  PininterestLikeMenuItem.h
-//  PininterestLikeMenu
+//  PinterestLikeMenuItem.h
+//  PinterestLikeMenu
 //
 //  Created by Tu You on 12/21/13.
 //  Copyright (c) 2013 Tu You. All rights reserved.
@@ -12,7 +12,7 @@
 
 typedef void(^SelectedBlock)(void);
 
-@interface PininterestLikeMenuItem : UIView
+@interface PinterestLikeMenuItem : UIView
 
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) UIImage *selectedImage;

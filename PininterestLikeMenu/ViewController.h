@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  PininterestLikeMenu
+//  PinterestLikeMenu
 //
 //  Created by Tu You on 12/21/13.
 //  Copyright (c) 2013 Tu You. All rights reserved.
