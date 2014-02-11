@@ -22,7 +22,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    UILongPressGestureRecognizer *gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(popPininterestMenu:)];
+    UILongPressGestureRecognizer *gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(popPinterestMenu:)];
     gesture.delegate = self;
     
     [self.view addGestureRecognizer:gesture];
@@ -55,7 +55,7 @@
     return _menu;
 }
 
-- (void)popPininterestMenu:(UIGestureRecognizer *)gesture
+- (void)popPinterestMenu:(UIGestureRecognizer *)gesture
 {
     CGPoint location = [gesture locationInView:self.view.window];
     
