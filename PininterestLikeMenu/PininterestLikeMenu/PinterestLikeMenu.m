@@ -14,6 +14,15 @@
 #define kBounceLength    (18)
 #define kPulseLength     (60)
 
+static CGFloat distanceBetweenXAndY(CGPoint pointX, CGPoint pointY)
+{
+    CGFloat distance = 0;
+    CGFloat offsetX = pointX.x - pointY.x;
+    CGFloat offsetY = pointX.y - pointY.y;
+    distance = sqrtf(pow(offsetX, 2) + pow(offsetY, 2));
+    return distance;
+}
+
 @interface PinterestLikeMenu ()
 
 @property (nonatomic, strong) NSArray *submenus;
@@ -89,7 +98,7 @@
     {
         CGPoint floatingPoint = [self floatingPointWithIndex:i];
         
-        float distance = [self distanceFromPointX:touchedPoint toPointY:floatingPoint];
+        CGFloat distance = distanceBetweenXAndY(touchedPoint, floatingPoint);
         
         if (distance < minDistance)
         {
@@ -106,7 +115,7 @@
         if (i == closestIndex)
         {
             CGPoint floatingPoint = [self floatingPointWithIndex:i];
-            float currentDistance = [self distanceFromPointX:touchedPoint toPointY:floatingPoint];
+            CGFloat currentDistance = distanceBetweenXAndY(touchedPoint, floatingPoint);
             currentDistance = currentDistance > kMaxLength ? kMaxLength : currentDistance;
             float step = (currentDistance / kMaxLength) * (kMaxLength - kLength);
             
@@ -114,7 +123,7 @@
                 [self moveWithIndex:i offsetOfFloatingPoint:step];
             }];
             
-            float distance = [self distanceFromPointX:touchedPoint toPointY:menuItem.center];
+            CGFloat distance = distanceBetweenXAndY(touchedPoint, floatingPoint);
             
             // if close enough, highlight the point
             if (distance < kPulseLength)
@@ -242,15 +251,6 @@
                              
                          }];
                      }];
-}
-
-- (float)distanceFromPointX:(CGPoint)pointX toPointY:(CGPoint)pointY
-{
-    float distance = 0;
-    float offsetX = pointX.x - pointY.x;
-    float offsetY = pointX.y - pointY.y;
-    distance = sqrtf(pow(offsetX, 2) + pow(offsetY, 2));
-    return distance;
 }
 
 @end
